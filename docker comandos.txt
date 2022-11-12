@@ -1,0 +1,20 @@
+========== crear una imagen
+docker build -t node-restapi .
+
+========== ver las imagenes
+docker images
+
+========== ejecutar una imagen
+docker run -it -p 4000:3000 node-restapi
+
+========== ejecutar una imagen como proceso/servicio
+docker run -d -p 4000:3000 node-restapi
+
+========== ver los procesos ejecutardos actualmente
+docker ps
+
+========== ver todos los procesos ejecutados
+docker ps -a
+
+========== detener la ejecucion - del contenedor con el id
+docker stop 1955b8e51539
